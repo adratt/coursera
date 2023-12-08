@@ -7,14 +7,18 @@ public class Principal {
 		p.empilhar("Eduaqrdo");
 		p.empilhar("Maria");
 		p.empilhar("José");
-		p.empilhar(false);
 		System.out.println(p.topo());
 		System.out.println(p.tamanho());
+		
+		Object[] arryElementos = p.getElementos();
+		System.out.println(arryElementos.length);
+		arryElementos[2] = "OUTRO";
 		
 		System.out.println(p.desempilhar());
-		
 		System.out.println(p.topo());
 		System.out.println(p.tamanho());
+		
+		System.out.println(p.getElementos().length);
 	}
 
 }
